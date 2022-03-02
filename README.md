@@ -7,7 +7,7 @@ export CFLAGS="-I/usr/bigdata/tools/include"
 export LDFLAGS="-L/usr/bigdata/tools/lib"
 
 yum -y groupinstall "Development Tools"
-yum -y install xz xz-devel libcurl-devel bzip2-devel zlib-devel readline-devel
+yum -y install xz xz-devel libcurl-devel bzip2-devel zlib-devel readline-devel xorg-x11-server-devel libX11-devel libXt-devel
 
 cd $HOME
 
@@ -24,7 +24,7 @@ cd $HOME
 wget https://cran.r-project.org/src/base/R-4/R-4.1.2.tar.gz
 cd R-4.1.2
 
-./configure --prefix=/usr/bigdata/R-4.1.2 --enable-R-shlib --with-x=no --with-readline --enable-memory-profiling
+./configure --prefix=/usr/bigdata/R-4.1.2 --enable-R-shlib --with-x=yes --with-readline --enable-memory-profiling
 make
 make install
 ```
