@@ -27,4 +27,8 @@ cd R-4.1.2
 ./configure --prefix=/usr/bigdata/R-4.1.2 --enable-R-shlib --with-x=yes --with-readline --enable-memory-profiling
 make
 make install
+
+./R
+install.packages('IRkernel')
+IRkernel::installspec(user = TRUE)
 ```
