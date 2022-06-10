@@ -22,6 +22,7 @@ make install
 cd $HOME
 
 wget https://cran.r-project.org/src/base/R-4/R-4.1.2.tar.gz
+tar -zxvf R-4.1.2.tar.gz
 cd R-4.1.2
 
 ./configure --prefix=/usr/bigdata/R-4.1.2 --enable-R-shlib --with-x=yes --with-readline --enable-memory-profiling
