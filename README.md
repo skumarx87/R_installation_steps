@@ -11,7 +11,7 @@ yum -y install xz xz-devel libcurl-devel bzip2-devel zlib-devel readline-devel x
 
 cd $HOME
 
-http://ftp.cs.stanford.edu/pub/exim/pcre/pcre2-10.37.tar.gz
+wget http://ftp.cs.stanford.edu/pub/exim/pcre/pcre2-10.37.tar.gz
 
 tar -zxvf pcre2-10.37.tar.gz
 cd pcre2-10.37
