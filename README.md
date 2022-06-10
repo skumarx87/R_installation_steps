@@ -1,3 +1,16 @@
+# Jupyter Notebook Installation with Miniconda
+```
+mkdir -p  /usr/bigdata
+mkdir softwares
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p /usr/bigdata/Miniconda3
+export PATH=/usr/bigdata/Miniconda3/bin:$PATH
+/usr/bigdata/Miniconda3/bin/conda create -n pythonML -y
+source activate pythonML
+pip install notebook
+nohup jupyter notebook --ip=0.0.0.0 &
+```
+
 # R_installation_steps
 ```
 
