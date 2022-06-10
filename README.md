@@ -44,5 +44,6 @@ make install
 
 ./R
 install.packages('IRkernel')
+install.packages('plotly')
 IRkernel::installspec(user = TRUE)
 ```
